@@ -129,3 +129,4 @@ controls.random.addEventListener('click', () => {
 
 buildBoard(board, state);
 update();
+if (linked in EXAMPLES) board.closest('section').scrollIntoView({ block: 'nearest' });
