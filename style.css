@@ -243,3 +243,24 @@ footer {
   text-align: center;
   padding: 2rem 0 3rem;
 }
+
+@media (pointer: coarse) {
+  button { min-height: 2.5rem; padding: 0.2em 0.8em; }
+  #size { min-height: 2.5rem; }
+  #check { width: 1.4em; height: 1.4em; }
+}
+
+@media (max-width: 40rem) {
+  main { padding: 1.5rem 1rem 1rem; }
+  h1 { font-size: 1.5em; margin-bottom: 1.2rem; }
+  h2 { margin: 1.6rem 0 0.6rem; }
+  .abstract { padding: 0; }
+  p { text-align: left; }
+  .description { gap: 0.6rem 0.8rem; }
+  .board {
+    --cell: clamp(1.75rem, calc((100vw - 2rem) / (var(--n) + 1)), 4.5rem);
+    font-size: clamp(1rem, calc(var(--cell) * 0.45), 1.3rem);
+  }
+  figure { margin-top: 1rem; }
+  footer { padding: 1rem 0 2rem; }
+}

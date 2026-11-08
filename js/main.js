@@ -119,6 +119,7 @@ document.querySelectorAll('.example').forEach(btn => btn.addEventListener('click
   loadExample(state, btn.dataset.example);
   buildBoard(board, state);
   commit();
+  board.closest('section').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }));
 
 controls.random.addEventListener('click', () => {
