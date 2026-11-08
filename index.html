@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Permutation Sorting Puzzles</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Permutation Sorting Puzzles</h1>
+    </header>
+
+    <section class="abstract">
+      <h2>Zusammenfassung</h2>
+      <p>
+        Auf einem Spielfeld der Größe <i>n</i>&thinsp;×&thinsp;<i>n</i> werden die Zahlen
+        1 bis <i>n</i><sup>2</sup> eingetragen. Jede Zeile und jede Spalte trägt ein Label:
+        <span class="sc">A</span> verlangt aufsteigende, <span class="sc">D</span> absteigende
+        Zahlen. Zeilen werden von links nach rechts gelesen, Spalten von oben nach unten.
+        Ein Klick auf ein Label kehrt seine Richtung um.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="secnum">1</span>Einstellungen</h2>
+      <form id="settings">
+        <dl class="description">
+          <dt>Größe</dt>
+          <dd>
+            <label for="size"><i>n</i> =</label>
+            <input id="size" type="number" min="2" max="10" step="1">
+            <button type="submit">Übernehmen</button>
+          </dd>
+          <dt>Prüfung</dt>
+          <dd>
+            <input id="check" type="checkbox">
+            <label for="check">Lösung prüfen</label>
+          </dd>
+          <dt>Übung</dt>
+          <dd>
+            <button type="button" class="example" data-example="1">Puzzle 1</button>
+            <button type="button" class="example" data-example="2">Puzzle 2</button>
+          </dd>
+          <dt>Aktionen</dt>
+          <dd>
+            <button type="button" id="clear">Zahlen leeren</button>
+            <button type="button" id="random">Labels zufällig</button>
+          </dd>
+        </dl>
+      </form>
+    </section>
+
+    <section>
+      <h2><span class="secnum">2</span>Spielfeld</h2>
+      <figure>
+        <div id="board" class="board" role="group"></div>
+        <figcaption><b>Abbildung 1:</b> <span id="caption"></span></figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2><span class="secnum">3</span>Fehlende Zahlen</h2>
+      <p id="missing" class="missing"></p>
+    </section>
+  </main>
+
+  <footer>1</footer>
+</body>
+</html>
